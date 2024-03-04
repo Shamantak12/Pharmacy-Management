@@ -35,7 +35,7 @@ body {
 }
 
 .logo .tweak {
-  color: #ff5252;
+  color: #0652df;
   font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .login-form .input-group-text {
   width: 100%;
-  background: #ff5252;
+  background: #0652df;
   border: 0px;
 }
 
@@ -74,8 +74,8 @@ body {
 }
 
 .login-form button.btn-custom {
-  background: #ff5252;
-	border-color: rgba(48, 46, 45, 1);
+  background: #0652df;
+	border-color: #0652df;
   color: #ffffff;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ body {
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 	background: rgba(48, 46, 45, 1);
-	border-color: #ff5252;
+	border-color: #0652df;
 }
 
 /* Chrome, Safari, Edge, Opera */

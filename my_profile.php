@@ -30,11 +30,11 @@
             $query = "SELECT * FROM admin_credentials";
             $result = mysqli_query($con, $query);
             $row = mysqli_fetch_array($result);
-            $pharmacy_name = $row['PHARMACY_NAME'];
-            $address = $row['ADDRESS'];
-            $email = $row['EMAIL'];
-            $contact_number = $row['CONTACT_NUMBER'];
-            $username = $row['USERNAME'];
+            $pharmacy_name = isset($row['PHARMACY_NAME']) ? $row['PHARMACY_NAME'] : '';
+            $address = isset($row['ADDRESS']) ? $row['ADDRESS'] : '';
+            $email = isset($row['EMAIL']) ? $row['EMAIL'] : '';
+            $contact_number = isset($row['CONTACT_NUMBER']) ? $row['CONTACT_NUMBER'] : '';
+            $username = isset($row['USERNAME']) ? $row['USERNAME'] : '';
           }
         ?>
         <div class="row">
