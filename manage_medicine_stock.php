@@ -56,7 +56,7 @@
             				<th style="width: 14%;">Medicine Name</th>
                     <th style="width: 5%;">Packing</th>
                     <th style="width: 14%;">Generic Name</th>
-                    <th style="width: 10%;">Batch ID</th>
+                    <th style="width: 10%;">Sec/Row/Col</th>
                     <th style="width: 8%;">Ex. Date (mm/yy)</th>
             				<th style="width: 15%;">Supplier</th>
                     <th style="width: 7%;">Qty.</th>

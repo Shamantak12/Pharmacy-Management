@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Dashboard - Home</title>
+        <!-- About section -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<script src="bootstrap/js/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
@@ -23,7 +24,43 @@
           createHeader('home', 'Dashboard', 'Home');
         ?>
         <!-- header section end -->
+  <!-- About section -->
+<div class="row">
+  <div class="col-md-12">
+    <h2 onclick="showhide(this.id);" id="about">About <i id="about-arrow" class="fa fa-chevron-down"></i></h2>
+    <h4 onclick="showhide(this.id);" id="contact" style="float: right; cursor: pointer; margin-left: 20px;">Contact Us <i id="contact-arrow" class="fa fa-chevron-down"></i></h4>
+    <p id="about-content" style="display: none;">This project is a Pharmacy Management System designed to manage customers, suppliers, medicines, invoices, and purchases. It provides features such as creating new invoices, adding customers and suppliers, managing medicine stock, generating sales and purchase reports, and more.</p>
+    <p id="contact-content" style="float:right; cursor: pointer; margin-right: 20px;">You can contact us for any inquiries or support related to the Pharmacy Management System. Our team will be happy to assist you. <br>Contact us:+1234567890 </p>
+  </div>
+</div>
 
+<style>
+  #about {
+    display: inline-block;
+  }
+
+  #contact {
+    display: inline-block;
+    float: right;
+  }
+</style>
+
+<script>
+function showhide(id) {
+  var content = document.getElementById(id + "-content");
+  var arrow = document.getElementById(id + "-arrow");
+  
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    arrow.classList.remove("fa-chevron-down");
+    arrow.classList.add("fa-chevron-up");
+  } else {
+    content.style.display = "none";
+    arrow.classList.remove("fa-chevron-up");
+    arrow.classList.add("fa-chevron-down");
+  }
+}
+</script>
         <!-- form content -->
         <div class="row">
           <div class="row col col-xs-8 col-sm-8 col-md-8 col-lg-8">
@@ -148,7 +185,6 @@
         <!-- form content end -->
 
         <hr style="border-top: 2px solid #ff5252;">
-
       </div>
     </div>
   </body>
